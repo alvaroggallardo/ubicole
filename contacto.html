@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="UTF-8" />
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  -->
+        <title>UbiCole</title>
+        <!-- METAINFORMACIÓN PARA LA APLICACIÓN  -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Contacto de Ubicole" />
+        <meta name="keywords" content="colegio,interinos,oposición,gis,búsqueda,ubicole,alvaroggallardo" />
+        <meta name="author" content="@alvareto5" />
+        <!-- CARGAMOS LOS ARCHIVOS EXTERNOS  -->
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+        <link rel="stylesheet" type="text/css" href="css/mapa.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
+        <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+        <!-- CODIGO GOOGLE ANALYTICS  -->
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-68458166-1', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+        
+    </head>
+    <body>
+        <div class="container">
+            <!-- DEFINIMOS LA CABECERA DE LA PORTADA  -->
+            <header>
+                <h1>Ponte en contacto con el equipo de <span>Ubicole</span></h1>
+                <div class="cabeceraAyuda">
+                    <div class="imagenCabecera">
+                        <img src="images/imagenPortadaAyuda.jpg" alt="logo">
+                    </div>
+                </div>
+				<nav class="codrops-demos">
+					<a href="index.php">Inicio</a>
+					<a href="buscador.php">Buscador de colegios</a>
+					<a href="ayuda.html" >Ayuda</a>
+                    <a href="contacto.html" class="current-demo">Contacto</a>
+				</nav>
+            </header>
+
+            <section>  
+                <div id="cuerpoContacto" >
+                    <div id="wrapperContacto" >             
+                        <div id="container_demo" >
+
+                            <div id="wrapper">
+                                <div id="login" class="animate form">
+
+                                    <!-- Formulario para loguearte en la aplicación  -->
+                                    <form  action="php/mail.php" method="POST" autocomplete="on"> 
+
+                                        <h1>Contactanos</h1> 
+                                        <p> 
+                                            <label for="username" class="uname" data-icon="u" >Nombre</label>
+                                            <input id="username" name="username" required="required" type="text" placeholder="usuario"/>
+                                        </p>
+                                        <p> 
+                                            <label for="emailContact" class="youmail" data-icon="e" >Correo electrónico</label>
+                                            <input id="emailContact" name="emailContact" required="required" type="email" placeholder="correo electrónico"/> 
+                                        </p>
+                                        <p> 
+                                            <label for="comentario" class="youmail" >Comentario</label>
+                                            <textArea rows="4" cols="40" id="comentario" name="comentario" required="required" type="comentario" placeholder="comentario"/> </textarea>
+                                        </p>
+                                        <p class="login button"> 
+                                             <input type="submit" value="Enviar" />
+                                        </p>
+
+                                    </form>
+                                </div>
+                                
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Texto de saludo de la aplicación  -->  
+                    <div class="textoContacto">
+                        Utiliza nuestro formulario de contacto para contarnos tus impresiones, sugerencias o cualquier cosa que nos quieras contar. Anímate.
+                        </br></br>
+
+                    </div>
+                </div><!-- Fin cuerpo contacto  -->  
+
+
+                <!-- DEFINIMOS EL PIE DE LA APLICACIÓN  -->  
+                <div id="footer">
+                    <div id="textoFooter">
+                        <b>Realizado por:</b> <a href="https://es.linkedin.com/in/alvarogonzalezgallardo">Álvaro González Gallardo</a>
+                    </div>
+                    <div id="logosFooter">
+                        <b>Powered by: </b> 
+                        <a href="https://www.route360.net" target='_blank'><img src="images/footer/ROUTE360.png" alt="logo" style="padding-right:10px;"></a>
+                        <a href="https://www.google.es/maps" target='_blank'><img src="images/footer/Google.jpg" alt="logo" style="padding-right:10px;"></a>
+                        <a href="http://openlayers.org" target='_blank'><img src="images/footer/openlayers.jpg" alt="logo" style="padding-right:10px;"></a>
+                    </div>
+                </div>
+            </section>
+
+        </div><!-- Fin container  -->  
+    </body>
+</html>
